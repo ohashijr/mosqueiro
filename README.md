@@ -18,6 +18,10 @@ Exemplo de sala de aula.
 * Ariana
 * Dayane
 
+# Projeto Vinhos&Vinhos tarefa:
+* cadastro de usuário
+* endereço
+
 # jate açai delivery
 * jake
 * elaine
