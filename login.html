@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login Jake Açai</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="max-w-md w-full p-8 bg-white rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold text-gray-800 text-center mb-6">Login</h2>
+        <form>
+            <div class="mb-4">
+                <label for="username" class="block text-gray-600 text-sm font-semibold mb-2">Nome de Usuário</label>
+                <input type="text" id="username" name="username"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+                    placeholder="Digite seu nome de usuário">
+            </div>
+            <div class="mb-6">
+                <label for="password" class="block text-gray-600 text-sm font-semibold mb-2">Senha</label>
+                <input type="password" id="password" name="password"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+                    placeholder="Digite sua senha">
+            </div>
+            <div class="text-center">
+                <button type="submit"
+                    class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none">Entrar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+<!-- 
+.bg-gray-100 flex items-center justify-center h-screen: Define o estilo do corpo (<body>) para centralizar o conteúdo vertical e horizontalmente na tela (flex items-center justify-center h-screen) e aplica um plano de fundo cinza claro (bg-gray-100).
+
+.max-w-md w-full p-8 bg-white rounded-lg shadow-lg: Estiliza o contêiner do formulário com uma largura máxima média (max-w-md), ocupando toda a largura disponível (w-full), fundo branco (bg-white), padding interno de 2rem (32px) (p-8), bordas arredondadas (rounded-lg) e uma sombra sutil (shadow-lg).
+
+.text-2xl font-bold text-gray-800 text-center mb-6: Estiliza o título "Login" como texto extra grande (text-2xl), negrito (font-bold), cor cinza escura (text-gray-800) e centraliza horizontalmente (text-center), adicionando uma margem inferior de 1.5rem (24px) (mb-6).
+
+<form>: Elemento HTML para encapsular os campos do formulário de login.
+
+Campos de Entrada (<input>):
+
+Utilizamos classes como w-full para que os campos ocupem toda a largura disponível.
+px-3 e py-2 definem o preenchimento interno horizontal e vertical dos campos.
+border, border-gray-300, rounded-lg criam uma borda suave e arredondada ao redor dos campos.
+focus:outline-none remove o contorno ao redor do campo quando ele está focado.
+focus:border-blue-500 define a cor da borda quando o campo está focado.
+placeholder fornece um texto de orientação dentro do campo antes que o usuário insira algum texto.
+Botão de Envio (<button>):
+
+bg-blue-500 text-white define a cor de fundo azul e o texto branco para o botão.
+py-2 px-4 define o preenchimento interno vertical e horizontal do botão.
+rounded-lg cria bordas arredondadas para o botão.
+hover:bg-blue-700 altera a cor de fundo do botão para um tom mais escuro de azul quando o mouse passa por cima.
+focus:outline-none remove o contorno ao redor do botão quando ele está focado.
+
+-->
+
+</html>
