@@ -6,9 +6,9 @@ Exemplo de sala de aula.
 * Tereza
 * Joaquim
 
-# Brinquedos
-* Rojane
-* Alcileny
+# Toys Shop
+* Regiane
+* Alcilene
 * Lucas
 
 
