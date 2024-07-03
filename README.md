@@ -22,4 +22,4 @@ Exemplo de sala de aula.
 * jake
 * elaine
 * alan
-* jhonnattan
+* jhonnathan
