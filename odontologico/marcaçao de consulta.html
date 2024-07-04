@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcação - Ohashi Consultório Odontológico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #00a3b4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background-color: #006064;
+            padding: 10px 20px;
+        }
+        .header img {
+            width: 40px;
+            height: 40px;
+        }
+        .header h1 {
+            color: #fff;
+            margin: 0;
+            font-size: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 1px;
+            font-weight: bold;
+        }
+        .form-group select, .form-group input[type="radio"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            margin-bottom: 3px;
+        }
+        .odontograma {
+            margin: 20px 0;
+        }
+        .odontograma img {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .btn {
+            background-color: #006064;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            display: block;
+            width: 95%;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="img/user-icon.png" alt="User Icon">
+        <h1>OHASHI Consultório Odontológico</h1>
+        <img src="img/logout.png" alt="Logout Icon">
+    </div>
+    <div class="container">
+        <h1>Marcação</h1>
+        <div class="form-group">
+            <label for="busca-paciente">Busca de Paciente</label>
+            <select id="busca-paciente" name="busca-paciente">
+                <option>Nome completo</option>
+                <!-- Outras opções de pacientes -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Procedimentos</label>
+            <input type="radio" id="limpeza" name="procedimento" value="limpeza">
+            <label for="limpeza">Limpeza</label><br>
+            <input type="radio" id="clareamento" name="procedimento" value="clareamento">
+            <label for="clareamento">Clareamento</label><br>
+            <input type="radio" id="canal" name="procedimento" value="canal">
+            <label for="canal">Canal</label><br>
+            <input type="radio" id="extracao" name="procedimento" value="extracao">
+            <label for="extracao">Extração</label><br>
+            <input type="radio" id="lente-contato" name="procedimento" value="lente-contato">
+            <label for="lente-contato">Lente de Contato</label><br>
+            <input type="radio" id="implante" name="procedimento" value="implante">
+            <label for="implante">Implante</label><br>
+            <input type="radio" id="restauracao" name="procedimento" value="restauracao">
+            <label for="restauracao">Restauração</label>
+        </div>
+        <div class="odontograma">
+            <h2>Odontograma do Paciente</h2>
+            <img src="img/odontograma.png" alt="Odontograma">
+        </div>
+        <a href="#" class="btn">Salvar</a>
+    </div>
+</body>
+</html>
