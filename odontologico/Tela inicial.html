@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Inicial - Ohashi Consultório Odontológico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #00b0b9;
+            color: #ffffff;
+            text-align: center;
+        }
+        .header {
+            background-color: #006f75;
+            padding: 16px;
+        }
+        .header img {
+            width: 100px;
+            vertical-align: middle;
+        }
+        .header .user {
+            font-size: 24px;
+            margin-left: 20px;
+            vertical-align: middle;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .tile {
+            background-color: #006f75;
+            padding: 5px;
+            border-radius: 15px;
+            transition: background-color 0.3s;
+        }
+        .tile:hover {
+            background-color: #009a9d;
+        }
+        .tile img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+        .tile span {
+            display: block;
+            margin-top: 10px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="img/user-icon.png" alt="User Icon">
+        <span class="user">Olá, Usuário1</span>
+    </div>
+    <div class="container">
+        <div class="tile">
+            <img src="img/6.png" alt="Cadastro Icon">
+            <span>Cadastro</span>
+        </div>
+        <div class="tile">
+            <img src="img/7.png" alt="Marcação Icon">
+            <span>Marcação</span>
+        </div>
+        <div class="tile">
+            <img src="img/8.png" alt="Financeiro Icon">
+            <span>Financeiro</span>
+        </div>
+        <div class="tile">
+            <img src="img/9.png" alt="Prontuário Icon">
+            <span>Prontuário</span>
+        </div>
+        <div class="tile">
+            <img src="img/10.png" alt="Relatórios Icon">
+            <span>Relatórios</span>
+        </div>
+        <div class="tile">
+            <img src="img/11.png" alt="Administrativo Icon">
+            <span>Administrativo</span>
+        </div>
+    </div>
+</body>
+</html>
