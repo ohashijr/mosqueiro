@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Consultório Odontológico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #00adb5;
+            color: black;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #007f7f;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo, .header .logout {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #007f7f;
+        }
+        .header .logo img, .header .logout img {
+            width: 20px;
+            height: 20px;
+        }
+        .container {
+            width: 320px;
+            margin: 20px auto;
+            background-color: #007f7f;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+        }
+        .button {
+            background-color: #00adb5;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+          .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .tabs div {
+            flex: 1;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .active {
+            font-weight: bold;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">U</div>
+        <div><img src="logo.png" alt="Ohashi Consultório Odontológico"></div>
+        <div class="logout">⎋</div>
+    </div>
+    <div class="container">
+        <h1>Cadastro</h1>
+        <div class="tabs">
+            <div class="active">Dados Básicos</div>
+            <div>Dados Adicionais</div>
+        </div>
+        <div class="profile-pic"></div>
+        <div class="form-group">
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" value="Fultal#11">
+        </div>
+        <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" value="123456">
+        </div>
+        <div class="form-group">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" value="Fulano de Tal da Silva">
+        </div>
+        <div class="form-group">
+            <label for="rg">RG</label>
+            <input type="text" id="rg" value="2532544">
+        </div>
+        <div class="form-group">
+            <label for="data-nasc">Data de Nasc.</label>
+            <input type="text" id="data-nasc" value="01/01/2001">
+        </div>
+        <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" value="(91) 99999-9999">
+        </div>
+        <div class="form-group">
+            <label for="conf-telefone">Conf. Telefone</label>
+            <input type="text" id="conf-telefone" value="(91) 99999-9999">
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" value="fulanodetal@email.com">
+            <button class="button">Salvar</button>
+        </div>
+    </div>
+</body>
+</html>
