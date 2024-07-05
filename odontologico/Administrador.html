@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracao - Ohashi Consultório Odontológico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #00adb5;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #007f7f;
+            padding: 1px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo, .header .logout {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #007f7f;
+        }
+        .header .logo img, .header .logout img {
+            width: 20px;
+            height: 20px;
+        }
+        .welcome {
+            margin: 20px 0;
+        }
+        .welcome span {
+            font-weight: bold;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .menu div {
+            background-color: #007f7f;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .menu div img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .menu div span {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">A</div>
+        <div><img src="img/log.png" alt="Ohashi Consultório Odontológico"></div>
+        <div class="logout">⎋</div>
+    </div>
+    <div class="welcome">
+        <p>Olá, <span>Administrador</span></p>
+    </div>
+    <div class="menu">
+        <div>
+            <img src="img/6.png" alt="Cadastro Equipe">
+            <span>Cadastro Equipe</span>
+        </div>
+        <div>
+            <img src="img/10.png" alt="Cadastro de Procedimentos">
+            <span>Cadastro de Procedimentos</span>
+        </div>
+        <div>
+            <img src="img/8.png" alt="Financeiro">
+            <span>Financeiro</span>
+        </div>
+        <div>
+            <img src="img/12.png" alt="Suporte">
+            <span>Suporte</span>
+        </div>
+        <div>
+            <img src="img/10.png" alt="Relatórios">
+            <span>Relatórios</span>
+        </div>
+    </div>
+</body>
+</html>
