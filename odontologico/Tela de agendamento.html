@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda - - Ohashi Consultório Odontológico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #00adb5;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 320px;
+            margin: 20px auto;
+            background-color: #007f7f;
+            padding: 50px;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 35px;
+        }
+        .calendar {
+            background-color: #00adb5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .calendar table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .calendar th, .calendar td {
+            padding: 10px;
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+        }
+        .calendar th {
+            background-color: #007f7f;
+            color: white;
+        }
+        .times div {
+            background-color: #007f7f;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            display: inline-block;
+            width: 30%;
+            cursor: pointer;
+        }
+        .times div:hover {
+            background-color: #005f5f;
+        }
+        .selected {
+            background-color: #00adb5;
+            color: white;
+        }
+        button {
+            background-color: #005f5f;
+            border: none;
+            color: white;
+            padding: 10px 50px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Agenda</h1>
+        <label for="paciente">Paciente</label><br>
+        <input type="text" id="paciente" name="paciente" value="Nome do Paciente"><br><br>
+        <div class="calendar">
+            <table>
+                <thead>
+                    <tr>
+                        <th>D</th>
+                        <th>S</th>
+                        <th>T</th>
+                        <th>Q</th>
+                        <th>Q</th>
+                        <th>S</th>
+                        <th>S</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2>Manhã</h2>
+        <div class="times">
+            <div>8:00</div>
+            <div class="selected">8:30</div>
+            <div>9:00</div>
+            <div>9:30</div>
+            <div>10:00</div>
+            <div>10:30</div>
+            <div>11:00</div>
+            <div>11:30</div>
+        </div>
+        <h2>Tarde</h2>
+        <div class="times">
+            <div>14:00</div>
+            <div>14:30</div>
+            <div>15:00</div>
+            <div>15:30</div>
+            <div>16:00</div>
+            <div>16:30</div>
+            <div>17:00</div>
+            <div>17:30</div>
+        </div>
+        <button>Agendar</button>
+    </div>
+</body>
+</html>
